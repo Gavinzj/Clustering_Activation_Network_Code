@@ -1,4 +1,4 @@
-Code: code is available under the folder code/src/.
+Code: code is available under the folder code/src/. <br/>
 Data: data is available under the folder code/Data/.
 
 Instructions on running the code:
@@ -7,8 +7,6 @@ To run the code, please run Exp/Panel.java and then input the commands based on 
 
 ------------------------------------------------------------------------------------------------------------
 
-entrance:
-Exp/Panel
 
 command: 
 
