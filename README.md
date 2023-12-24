@@ -1,6 +1,11 @@
-# Clustering_Activation_Network_Code
+Code: code is available under the folder code/src/.
+Data: data is available under the folder code/Data/.
 
------------------------------- How to run ------------------------------------------
+Instructions on running the code:
+
+To run the code, please run Exp/Panel.java and then input the commands based on the tasks. Below are the details and several sample tasks are provided.
+
+------------------------------------------------------------------------------------------------------------
 
 entrance:
 Exp/Panel
@@ -19,6 +24,7 @@ lastfm_asia
 SetPyramid samplingPyramidSet 5 4
 0
 
+------------------------------------------------------------------------------------------------------------
 <<<<<<<<<<<<<<<<<< ON SAMPLING PYRAMID SETS>>>>>>>>>>>>>>>>>>>>>
 Format: SetPyramid samplingPyramidSet trials# pyramidNum#
 
@@ -29,6 +35,7 @@ lastfm_asia
 SetPyramid samplingPyramidSet 5 4
 0
 
+------------------------------------------------------------------------------------------------------------
 <<<<<<<<<<<<<<<<<< ON CLUSTERING (ANCO)  >>>>>>>>>>>>>>>>>>>>>
 Example (CLUSTERING):
 lastfm_asia
