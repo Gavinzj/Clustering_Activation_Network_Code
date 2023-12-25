@@ -8,6 +8,7 @@ To run the code, please run Exp/Panel.java and then input the commands based on 
 We included the parameters in a soft-coded way. The program Exp/Panel.java provides a command line interface for a user to input the commands in the console. Specifically, when the program Exp/Panel.java run, a user is required to input the information in the console including: <br/>
 1) data_set_name,  <br/>
 2) which_method_to_run,  <br/>
+3) parameters.  <br/>
 
 ------------------------------------------------------------------------------------------------------------
 Sample Task-1. Do the clustering using method ANCO on data set lastfm_asia.
