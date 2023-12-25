@@ -15,7 +15,7 @@ Sample Task-1. Do the clustering using method ANCO on data set lastfm_asia.
 
 Commands:<br/>
 lastfm_asia<br/>
-ClusterExtractor doClustering_Active_Online 0.3 3 0 100 20 3<br/>
+ClusterExtractor doClustering_Active_Online 0.3 3 0 100 3<br/>
 0<br/>
 
 <br/>
