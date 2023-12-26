@@ -15,7 +15,7 @@ Sample Task-1. Do the clustering using method ANCF on data set lastfm_asia.
 
 Commands:<br/>
 lastfm_asia<br/>
-ClusterExtractor doClustering 0.3 3 0 100 3<br/>
+ClusterExtractor doClustering 0.7 3 0 100 3<br/>
 0<br/>
 
 <br/>
@@ -25,6 +25,9 @@ Line 2: ClusterExtractor which_method_to_run epsilon# mu# min_time# max_time# tr
 Line 3: 0
 
 (NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  
+
+Output:
+The clustering results obtained would be stored under the folder data/citeseer_cociting/clustering/pic/.
 
 ------------------------------------------------------------------------------------------------------------
 Sample Task-2. Do the clustering using method ANCO on data set lastfm_asia.
@@ -41,6 +44,9 @@ Line 2: ClusterExtractor which_method_to_run epsilon# mu# min_time# max_time# tr
 Line 3: 0
 
 (NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  
+
+Output:
+The clustering results obtained would be stored under the folder data/citeseer_cociting/clustering/pic/.
 
 ------------------------------------------------------------------------------------------------------------
 
