@@ -55,27 +55,22 @@ Output:
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
 ------------------------------------------------------------------------------------------------------------
+Sample Task-3. Construct 5 indices for dataset lastfm_asia, each set consists of 4 pyramids.
 
-Run the java program java Exp/Panel
-Then type in the commands including dataset, tasks
+Commands:<br/>
+lastfm_asia<br/>
+SetPyramid samplingPyramidSet 5 4<br/>
+0<br/>
 
-Example: To sample and save 5 pyramids sets for dataset lastfm_asia, each set consists of 4 pyramids.
+<br/>
+The explanation for the commands: <br/>
+Line 1: data_set_name <br/>
+Line 2: SetPyramid which_method_to_run index_No# pyramid_No# <br/>
+Line 3: 0
 
-Run:
-java Exp/Panel
-Type:
-lastfm_asia
-SetPyramid samplingPyramidSet 5 4
-0
+Line 1 specifies the data set "lastfm_asia". 
+Line 2 specifies the task and related parameters.
+Line 3 terminates the program.
 
-------------------------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<< ON SAMPLING PYRAMID SETS>>>>>>>>>>>>>>>>>>>>>
-Format: SetPyramid samplingPyramidSet trials# pyramidNum#
-
-Description: Sampling and save 5 pyramids sets, each of which consists of 4 pyramids, for later experiments.
-
-Example: 
-lastfm_asia
-SetPyramid samplingPyramidSet 5 4
-0
-
+Output:
+The indices would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
