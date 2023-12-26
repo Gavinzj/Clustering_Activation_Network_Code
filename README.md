@@ -33,7 +33,7 @@ Output:
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
 ------------------------------------------------------------------------------------------------------------
-Sample Task-1. Do the clustering using method ANCO on data set lastfm_asia.
+Sample Task-2. Do the clustering using method ANCO on data set lastfm_asia.
 
 Commands:<br/>
 lastfm_asia<br/>
@@ -55,7 +55,7 @@ Output:
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
 ------------------------------------------------------------------------------------------------------------
-Sample Task-2. Do the clustering using method ANCOR on data set lastfm_asia.
+Sample Task-3. Do the clustering using method ANCOR on data set lastfm_asia.
 
 Commands:<br/>
 lastfm_asia<br/>
@@ -77,7 +77,7 @@ Output:
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
 ------------------------------------------------------------------------------------------------------------
-Sample Task-3. Calculate the running time of method ANCO on data set lastfm_asia.
+Sample Task-4. Calculate the running time of method ANCO on data set lastfm_asia.
 
 Commands:<br/>
 lastfm_asia<br/>
@@ -99,7 +99,7 @@ Output:
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
 ------------------------------------------------------------------------------------------------------------
-Sample Task-4. Construct 5 indices for dataset lastfm_asia, each set consists of 4 pyramids.
+Sample Task-5. Construct 5 indices for dataset lastfm_asia, each set consists of 4 pyramids.
 
 Commands:<br/>
 lastfm_asia<br/>
