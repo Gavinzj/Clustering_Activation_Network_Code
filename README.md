@@ -22,57 +22,109 @@ ClusterExtractor doClustering_Active_Online 0.3 3 0 100 3<br/>
 The explanation for the commands: <br/>
 Line 1: data_set_name <br/>
 Line 2: ClusterExtractor which_method_to_run epsilon# mu# min_time# max_time# trial_No# <br/>
-Line 3: 0
+Line 3: 0<br/>
 
-Line 1 specifies the data set "lastfm_asia". The file paths will then point to the folder corresponding to the data set "lastfm_asia".
-Line 2 specifies the task and related parameters. The task is to "Extract the clustering" using the method "ANCO". The values of parameters epsilon and mu is "0.3" and "3", respectively. The time varies from "0" to "100". "We will do the clustering "3" times.
-Line 3 terminates the program.
-(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  
+<br/>
+Line 1 specifies the data set "lastfm_asia". The file paths will then point to the folder corresponding to the data set "lastfm_asia".<br/>
+Line 2 specifies the task and related parameters. The task is to "Extract the clustering" using the method "ANCO". The values of parameters epsilon and mu is "0.3" and "3", respectively. The time varies from "0" to "100". "We will do the clustering "3" times.<br/>
+Line 3 terminates the program.<br/>
+(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  <br/>
 
-Output:
-The clustering results obtained would be stored under the folder data/citeseer_cociting/clustering/pic/.
+<br/>
+Output:<br/>
+The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.<br/>
 
 ------------------------------------------------------------------------------------------------------------
-Sample Task-2. Do the clustering using method ANCO on data set lastfm_asia.
+Sample Task-2. Do the clustering using method ANCOR on data set lastfm_asia.
 
 Commands:<br/>
 lastfm_asia<br/>
-ClusterExtractor doClustering_Active_Online 0.3 3 0 100 3<br/>
+ClusterExtractor doClustering_Active_Online_LocalUpdate 0.3 3 0 100 3<br/>
 0<br/>
 
 <br/>
 The explanation for the commands: <br/>
 Line 1: data_set_name <br/>
 Line 2: ClusterExtractor which_method_to_run epsilon# mu# min_time# max_time# trial_No# <br/>
-Line 3: 0
+Line 3: 0<br/>
 
-(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  
+<br/>
+Line 1 specifies the data set "lastfm_asia". The file paths will then point to the folder corresponding to the data set "lastfm_asia".<br/>
+Line 2 specifies the task and related parameters. The task is to "Extract the clustering" using the method "ANCOR". The values of parameters epsilon and mu is "0.3" and "3", respectively. The time varies from "0" to "100". "We will do the clustering "3" times.<br/>
+Line 3 terminates the program.<br/>
+(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  <br/>
 
-Output:
-The clustering results obtained would be stored under the folder data/citeseer_cociting/clustering/pic/.
-
-------------------------------------------------------------------------------------------------------------
-
-Run the java program java Exp/Panel
-Then type in the commands including dataset, tasks
-
-Example: To sample and save 5 pyramids sets for dataset lastfm_asia, each set consists of 4 pyramids.
-
-Run:
-java Exp/Panel
-Type:
-lastfm_asia
-SetPyramid samplingPyramidSet 5 4
-0
+<br/>
+Output:<br/>
+The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
 ------------------------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<< ON SAMPLING PYRAMID SETS>>>>>>>>>>>>>>>>>>>>>
-Format: SetPyramid samplingPyramidSet trials# pyramidNum#
+Sample Task-3. Do the clustering using method ANCF on data set lastfm_asia.
 
-Description: Sampling and save 5 pyramids sets, each of which consists of 4 pyramids, for later experiments.
+Commands:<br/>
+lastfm_asia<br/>
+ClusterExtractor doClustering_Active 0.3 3 0 100 3<br/>
+0<br/>
 
-Example: 
-lastfm_asia
-SetPyramid samplingPyramidSet 5 4
-0
+<br/>
+The explanation for the commands: <br/>
+Line 1: data_set_name <br/>
+Line 2: ClusterExtractor which_method_to_run epsilon# mu# min_time# max_time# trial_No# <br/>
+Line 3: 0<br/>
 
+<br/>
+Line 1 specifies the data set "lastfm_asia". The file paths will then point to the folder corresponding to the data set "lastfm_asia".<br/>
+Line 2 specifies the task and related parameters. The task is to "Extract the clustering" using the method "ANCF". The values of parameters epsilon and mu is "0.3" and "3", respectively. The time varies from "0" to "100". "We will do the clustering "3" times.<br/>
+Line 3 terminates the program.<br/>
+(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  <br/>
+
+<br/>
+Output:<br/>
+The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
+
+------------------------------------------------------------------------------------------------------------
+Sample Task-4. Calculate the running time of method ANCO on data set lastfm_asia.
+
+Commands:<br/>
+lastfm_asia<br/>
+ClusteringTime clusteringTime_Active_Online 0.3 3 0 100 3<br/>
+0<br/>
+
+<br/>
+The explanation for the commands: <br/>
+Line 1: data_set_name <br/>
+Line 2: ClusteringTime which_method_to_run epsilon# mu# min_time# max_time# trial_No# <br/>
+Line 3: 0<br/>
+
+<br/>
+Line 1 specifies the data set "lastfm_asia". The file paths will then point to the folder corresponding to the data set "lastfm_asia".<br/>
+Line 2 specifies the task and related parameters. The task is to "Calculate the clustering time" of method "ANCO". The values of parameters epsilon and mu is "0.3" and "3", respectively. The time varies from "0" to "100". "We will do the clustering "3" times.<br/>
+Line 3 terminates the program.<br/>
+(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  <br/>
+
+<br/>
+Output:<br/>
+The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
+
+------------------------------------------------------------------------------------------------------------
+Sample Task-5. Construct 5 indices for dataset lastfm_asia, each set consists of 4 pyramids.
+
+Commands:<br/>
+lastfm_asia<br/>
+SetPyramid samplingPyramidSet 5 4<br/>
+0<br/>
+
+<br/>
+The explanation for the commands: <br/>
+Line 1: data_set_name <br/>
+Line 2: SetPyramid which_method_to_run index_No# pyramid_No# <br/>
+Line 3: 0<br/>
+
+<br/>
+Line 1 specifies the data set "lastfm_asia". <br/>
+Line 2 specifies the task and related parameters.<br/>
+Line 3 terminates the program.<br/>
+
+<br/>
+Output:<br/>
+The indices would be stored under the folder Data/lastfm_asia/setPyramid/.
