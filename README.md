@@ -73,4 +73,4 @@ Line 2 specifies the task and related parameters.
 Line 3 terminates the program.
 
 Output:
-The indices would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
+The indices would be stored under the folder Data/lastfm_asia/setPyramid/.
