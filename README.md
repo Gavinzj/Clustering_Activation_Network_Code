@@ -81,7 +81,7 @@ Sample Task-4. Calculate the running time of method ANCO on data set lastfm_asia
 
 Commands:<br/>
 lastfm_asia<br/>
-ClusteringExp clusteringTime_Active_Online 0.3 3 0 100 3<br/>
+ClusteringTime clusteringTime_Active_Online 0.3 3 0 100 3<br/>
 0<br/>
 
 <br/>
