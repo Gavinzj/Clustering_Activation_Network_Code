@@ -93,7 +93,7 @@ ClusteringTime clusteringTime_Active_Online 0.3 3 0 100 3<br/>
 <br/>
 The explanation for the commands: <br/>
 Line 1: data_set_name <br/>
-Line 2: ClusteringExp which_method_to_run epsilon# mu# min_time# max_time# trial_No# <br/>
+Line 2: ClusteringTime which_method_to_run epsilon# mu# min_time# max_time# trial_No# <br/>
 Line 3: 0<br/>
 
 <br/>
