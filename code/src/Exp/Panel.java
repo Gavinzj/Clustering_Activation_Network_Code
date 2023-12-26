@@ -9,20 +9,29 @@ import Community.SetPyramid;
 import Graph.Graph;
 import Utilities.FilePath_Mon;
 
+//To process the user input, modify the global variables correspondingly, then run the program
 public class Panel {
 	
 	public static void main(String arg[]) throws IOException, InterruptedException {
 
+		// Create a Scanner object to read the user input
 		Scanner myObj = new Scanner(System.in); // Create a Scanner object
 		
+		// read and process the user input
 		while (true) {
-			String input = myObj.nextLine(); // Read user input
+			
+			// Read user input
+			String input = myObj.nextLine();
+			
+			// if user input is "0", terminate the program
 			if (input.equals("0")) break;
 			String[] graphs = input.split(",");
 			
+			// process user input
 			input = myObj.nextLine(); // Read user input
 			String[] strs = input.split(" ");
 			
+			// for each data set that user input
 			for (String graph : graphs) {
 				
 				FilePath_Mon.filePathPre = System.getProperty("user.dir") + "/Data/" + graph;
