@@ -50,27 +50,6 @@ public class Iterate {
 		Iterate.strategy = strategy;
 		
 		OverLap();
-		
-		switch (strategy) {
-		case 0:
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
-		case 99:
-			
-			JaccardSim();
-			OverlapCoef();
-			Weight();
-			
-			break;
-		}
 	}
 
 	private static class OverLap extends Thread{
@@ -165,91 +144,6 @@ public class Iterate {
 		}
 		
 		latch.await();
-	}
-
-	private static void JaccardSim() {
-		JaccardSims = new double[Graph.ADJ_vID.length][];
-
-		int vertexSize = Graph.getVertexSize();
-
-		for (int u = 0; u < vertexSize; u++) {
-			JaccardSims[u] = new double[Graph.ADJ_vID[u].length];
-		}
-
-		int idx_u = -1;
-		for (int u = 0; u < vertexSize; u++) {
-			idx_u++;
-
-			int idx_v = -1;
-			for (int v : Graph.ADJ_vID[u]) {
-				idx_v++;
-
-				JaccardSims[idx_u][idx_v] = OverLaps[idx_u][idx_v]
-						/ (Graph.ADJ_vID[u].length + Graph.ADJ_vID[v].length - OverLaps[idx_u][idx_v]);
-			}
-		}
-	}
-
-	private static void OverlapCoef() {
-		OverlapCoefs = new double[Graph.ADJ_vID.length][];
-
-		int vertexSize = Graph.getVertexSize();
-
-		for (int u = 0; u < vertexSize; u++) {
-			OverlapCoefs[u] = new double[Graph.ADJ_vID[u].length];
-		}
-
-		int idx_u = -1;
-		for (int u = 0; u < vertexSize; u++) {
-			idx_u++;
-
-			int idx_v = -1;
-			for (int v : Graph.ADJ_vID[u]) {
-				idx_v++;
-
-				OverlapCoefs[idx_u][idx_v] = OverLaps[idx_u][idx_v]
-						/ ((double) Math.min(Graph.ADJ_vID[u].length, Graph.ADJ_vID[v].length));
-			}
-		}
-	}
-
-	private static void Weight() {
-		
-		// strategy = 0: all equal
-		// strategy = 1: on jaccard similarity
-		// strategy = 2: on overlapping coefficient
-		switch (Iterate.strategy) {
-		case 0:
-		case 3:
-		case 8:
-		case 99:
-			Weights = new double[Graph.ADJ_vID.length][];
-
-			int vertexSize = Graph.getVertexSize();
-			int neighborSize = 0;
-			for (int idx_u = 0; idx_u < vertexSize; idx_u++) {
-				
-				neighborSize = Graph.ADJ_vID[idx_u].length;
-				Weights[idx_u] = new double[neighborSize];
-				
-				for (int idx_v = 0; idx_v < neighborSize; idx_v++) {
-					Weights[idx_u][idx_v] = 1;
-				}
-			}
-			break;
-		case 1:
-		case 4:
-		case 6:
-		case 9:
-			Weights = JaccardSims;
-			break;
-		case 2:
-		case 5:
-		case 7:
-		case 10:
-			Weights = OverlapCoefs;
-			break;
-		}
 	}
 
 	// for strategy 99, 0-10
@@ -883,47 +777,6 @@ public class Iterate {
 			
 		case 16:
 			{
-//				int edgeID;
-//				for (int u : activeNodes) {
-//					int neighborSize = Graph.ADJ_vID[u].length;
-//					
-//					for (int idx_v = 0; idx_v < neighborSize; idx_v++) {
-//						edgeID = Graph.ADJ_eID[u][idx_v];
-//						int v = Graph.ADJ_vID[u][idx_v];
-//						
-////						if (u > v) continue;
-//						
-//						commonNeighbor(u, v);
-//						
-//						// cosine similarity
-//						// for each common neighbors
-//						int edge_ux, edge_vx;
-//						double nominator = 0;
-//						
-//						// 5 / 9
-//						int edgeSize = intersect_edges[0].size();
-//						for (int i = 0; i < edgeSize; i++) {
-//							edge_ux = intersect_edges[0].get(i);
-//							edge_vx = intersect_edges[1].get(i);
-//							
-//							nominator += (Graph.Edges[edge_ux].weight + Graph.Edges[edge_vx].weight);
-//						}
-//						
-//						nominator += (Graph.Edges[edgeID].weight * 2);
-//						
-//						double denominator = 0;
-//						for (int i : Graph.ADJ_eID[u]) {
-//							denominator += Graph.Edges[i].weight;
-//						}
-//						
-//						for (int i : Graph.ADJ_eID[v]) {
-//							denominator += Graph.Edges[i].weight;
-//						}
-//						
-//						structuralSimilarity_weighted[edgeID] = nominator / denominator;
-//					}
-//				}
-				
 				// transform distance to weighted cosine similarity
 				int vertexSize = Graph.getVertexSize();
 				int neighborSize = 0;

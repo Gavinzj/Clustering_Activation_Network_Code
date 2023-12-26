@@ -229,7 +229,7 @@ public class ClusterExtractor {
 		return clusterNum;
 	}
 
-	public static void doClustering(int pyramidNum, double minThreshold, double maxThreshold, double stepSize,
+	public static void doClustering(int pyramidNum, double minThreshold, double maxThreshold,
 			int iterations, int iterationStrategy, int trials) throws IOException, InterruptedException {
 
 		save = true;
@@ -239,7 +239,7 @@ public class ClusterExtractor {
 		Iterate.init(iterationStrategy);
 
 		int maxLevel = (int) (Math.log(Graph.getVertexSize()) / Math.log(2));
-		int thresholdNum = (int) ((maxThreshold - minThreshold) / stepSize) + 1;
+		int thresholdNum = (int) ((maxThreshold - minThreshold) / 0.1) + 1;
 
 		fileOutput_extractedClusterPre = FilePath_Mon.filePathPre + "/extractedCluster/degree order/";
 
@@ -256,7 +256,7 @@ public class ClusterExtractor {
 
 			for (int thresholdIdx = 0; thresholdIdx < thresholdNum; thresholdIdx++) {
 				double voteThreshold = Double
-						.parseDouble(String.format("%.1f", (minThreshold + thresholdIdx * stepSize)));
+						.parseDouble(String.format("%.1f", (minThreshold + thresholdIdx * 0.1)));
 
 				System.out.println("voteThreshold " + voteThreshold);
 
@@ -1336,7 +1336,7 @@ public class ClusterExtractor {
 		}
 	}
 
-	public static void clusteringTime(int pyramidNum, double voteThreshold, double stepSize,
+	public static void clusteringTime(int pyramidNum, double voteThreshold,
 			int iterations, int iterationStrategy, int trials) throws IOException, InterruptedException {
 
 		save = false;

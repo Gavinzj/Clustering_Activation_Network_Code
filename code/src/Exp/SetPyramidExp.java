@@ -1066,11 +1066,11 @@ public class SetPyramidExp {
 		}
 	}
 
-	public static void createPyramidSets(int minPyramidNum, int maxPyramidNum, int time, int trials) throws IOException, InterruptedException {
+	public static void createPyramidSets(int minPyramidNum, int maxPyramidNum, int trials) throws IOException, InterruptedException {
 		String fileOutput = FilePath_Mon.filePathPre + "/Exp_construct_pyramid_byNum.txt";
 
 		ArrayList<Integer> pyramidNums = new ArrayList<Integer>();
-		for (int pyramidNum = minPyramidNum; pyramidNum <= maxPyramidNum; pyramidNum *= time) {
+		for (int pyramidNum = minPyramidNum; pyramidNum <= maxPyramidNum; pyramidNum *= 2) {
 			pyramidNums.add(pyramidNum);
 		}
 
@@ -1130,11 +1130,11 @@ public class SetPyramidExp {
 		}
 	}
 	
-	public static void createPyramidSets_parallel(int minPyramidNum, int maxPyramidNum, int time, int trials) throws IOException, InterruptedException {
+	public static void createPyramidSets_parallel(int minPyramidNum, int maxPyramidNum, int trials) throws IOException, InterruptedException {
 		String fileOutput = FilePath_Mon.filePathPre + "/Exp_construct_pyramid_byNum_parallel.txt";
 
 		ArrayList<Integer> pyramidNums = new ArrayList<Integer>();
-		for (int pyramidNum = minPyramidNum; pyramidNum <= maxPyramidNum; pyramidNum *= time) {
+		for (int pyramidNum = minPyramidNum; pyramidNum <= maxPyramidNum; pyramidNum *= 2) {
 			pyramidNums.add(pyramidNum);
 		}
 
@@ -1194,11 +1194,11 @@ public class SetPyramidExp {
 		}
 	}
 	
-	public static void pyramidSize(int minPyramidNum, int maxPyramidNum, int time, int trials) throws IOException, InterruptedException {
+	public static void pyramidSize(int minPyramidNum, int maxPyramidNum, int trials) throws IOException, InterruptedException {
 		String fileOutput = FilePath_Mon.filePathPre + "/Exp_pyramid_size_byNum.txt";
 
 		ArrayList<Integer> pyramidNums = new ArrayList<Integer>();
-		for (int pyramidNum = minPyramidNum; pyramidNum <= maxPyramidNum; pyramidNum *= time) {
+		for (int pyramidNum = minPyramidNum; pyramidNum <= maxPyramidNum; pyramidNum *= 2) {
 			pyramidNums.add(pyramidNum);
 		}
 
