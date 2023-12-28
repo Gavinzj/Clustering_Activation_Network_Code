@@ -84,25 +84,3 @@ Line 3 terminates the program.<br/>
 Output:<br/>
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
-------------------------------------------------------------------------------------------------------------
-Sample Task-4. Construct 5 indices for dataset lastfm_asia, each set consists of 4 pyramids.
-
-Commands:<br/>
-lastfm_asia<br/>
-SetPyramid samplingPyramidSet 5 4<br/>
-0<br/>
-
-<br/>
-The explanation for the commands: <br/>
-Line 1: data_set_name <br/>
-Line 2: SetPyramid which_method_to_run index_No# pyramid_No# <br/>
-Line 3: 0<br/>
-
-<br/>
-Line 1 specifies the data set "lastfm_asia". <br/>
-Line 2 specifies the task and related parameters.<br/>
-Line 3 terminates the program.<br/>
-
-<br/>
-Output:<br/>
-The indices would be stored under the folder Data/lastfm_asia/setPyramid/.
