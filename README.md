@@ -10,7 +10,7 @@ We included the parameters in a soft-coded way. The program Exp/Panel.java provi
 2) which_method_to_run,  <br/>
 3) parameters.  <br/>
 
-Note that based on the user input, the values of global variables like file_paths and data-dependent parameters will be modified by the program correspondingly. In other words, a user does not need to modify the code by hand.
+Note that based on the user input, the values of global variables like file_paths and parameters will be modified by the program correspondingly. In other words, a user does not need to modify the code by hand.
 
 ------------------------------------------------------------------------------------------------------------
 Sample Task-1. Do the clustering using method ANCO on data set lastfm_asia.
