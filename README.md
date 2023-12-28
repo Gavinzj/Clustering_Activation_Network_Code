@@ -84,3 +84,15 @@ Line 3 terminates the program.<br/>
 Output:<br/>
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
+------------------------------------------------------------------------------------------------------------
+
+Sample Task-4. Calculate the running time of method ANCO on data set lastfm_asia.
+
+Commands:<br/>
+lastfm_asia<br/>
+ClusteringTime clusteringTime_Active_Online 0.3 3 0 100 3<br/>
+0<br/>
+
+<br/>
+Output:<br/>
+The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
