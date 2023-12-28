@@ -75,12 +75,6 @@ Line 2: ClusterExtractor which_method_to_run epsilon# mu# min_time# max_time# tr
 Line 3: 0<br/>
 
 <br/>
-Line 1 specifies the data set "lastfm_asia". The file paths will then point to the folder corresponding to the data set "lastfm_asia".<br/>
-Line 2 specifies the task and related parameters. The task is to "Extract the clustering" using the method "ANCF". The values of parameters epsilon and mu is "0.3" and "3", respectively. The time varies from "0" to "100". "We will do the clustering "3" times.<br/>
-Line 3 terminates the program.<br/>
-(NOTE: Please remember to type "0" at the end, which is for terminating the program, then click Enter)  <br/>
-
-<br/>
 Output:<br/>
 The clustering results obtained would be stored under the folder Data/lastfm_asia/extractedCluster/degree order/.
 
